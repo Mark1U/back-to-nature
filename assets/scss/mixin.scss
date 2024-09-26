@@ -1,0 +1,27 @@
+ @mixin btnStyle($bg: #fff, $theme: #00000040) {
+     //  box-shadow: 0 0 1px rgba(, .25);
+     box-shadow: inset -2px -2px 2px $theme;
+     background-color: $bg;
+
+     border: 1px solid black;
+     border-radius: 15px;
+ }
+
+
+ @mixin tablet {
+     @media (max-width: 1024px) {
+         @content;
+     }
+ }
+
+ @mixin desktop {
+     @media (min-width: 1025px) {
+         @content;
+     }
+ }
+
+ @mixin smartphone {
+     @media (max-width: 480px) {
+         @content;
+     }
+ }
